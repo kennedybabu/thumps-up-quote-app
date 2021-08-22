@@ -28,6 +28,12 @@ export class QuoteComponent implements OnInit {
     console.log(this.quotes[index].downVote)
   }
 
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length
+    quote.id = quoteLength+1
+    this.quotes.push(quote)
+  }
+
 
   constructor() { }
 
