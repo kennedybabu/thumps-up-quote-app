@@ -10,11 +10,17 @@ export class QuoteComponent implements OnInit {
 
 
   quotes: Quote[] = [
-    {id:1, quote: 'wash utensils', author: "theGreat", submittedBy:"manHasNoName" },
-    {id:2, quote: 'hulla ballooo', author: "alexander", submittedBy:"collo" },
-    {id:3, quote: 'wash the cat', author: "noOne", submittedBy:"whiskers" },
-    {id:4, quote: 'get cat food', author: "mimi", submittedBy:"humbleMan" }
+    new Quote(1,  'wash utensils', "theGreat", "manHasNoName"),
+    new Quote(2,  'hulla ballooo', "alexander", "collo" ),
+    new Quote(3,  'wash the cat', "noOne", "whiskers" ),
+    new Quote(4,  'get cat food', "mimi", "humbleMan" )
   ]
+
+  upvoteQuote(index:number){
+    this.quotes[index].upVote
+
+    console.log( index)
+  }
 
 
   constructor() { }

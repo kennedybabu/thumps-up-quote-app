@@ -2,9 +2,10 @@
     <h1>My Quotes</h1>
     
     <ul>
-      <li *ngFor="let quote of quotes">
+        <li *ngFor="let quote of quotes; let i = index">
           {{quote.quote}}
           <app-quote-detail [quote]="quote"></app-quote-detail>
+          <button (click)="upvoteQuote(i)">Upvote</button>
         </li>
     </ul>
   </div>

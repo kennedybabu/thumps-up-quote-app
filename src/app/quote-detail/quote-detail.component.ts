@@ -11,7 +11,7 @@ import {Quote} from "../quote"
 export class QuoteDetailComponent implements OnInit {
 
 
-  @Input() quote: Quote = {id:8, quote:'', author:'', submittedBy:''}
+  @Input() quote: Quote= {id:8, quote:'', author:'', submittedBy:'', upVote: 0, downVote: 0}
 
   constructor() { }
 
