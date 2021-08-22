@@ -1,0 +1,30 @@
+.quote-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: rgb(238, 134, 116);
+    max-width: 70vw;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.item {
+    min-width: 70%;
+    background-color: wheat;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+        box-shadow: 1px 6px 13px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 6px 13px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 6px 13px -4px rgba(0,0,0,0.75);
+    }
+}
+
+.create-quote {
+    text-align: center;
+}
