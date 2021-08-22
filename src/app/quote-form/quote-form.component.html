@@ -2,23 +2,31 @@
     <h2>Create new Quote</h2>
 
     <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
-        <div>
+        <div class="form-group" >
             <label for="Quote">Quote</label><br>
-            <textarea name="quote" id="quote" rows="5" required [(ngModel)]="newQuote.quote" #description="ngModel"></textarea>
+            <textarea name="quote" id="quote" rows="5" required [(ngModel)]="newQuote.quote" #quote="ngModel"></textarea>
 
-            <!-- <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <div *ngIf="quote.touched && !quote.valid" class="alert alert-danger">
                 <p>Quote is required</p>
-            </div> -->
+            </div>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="author">Author</label><br>
             <input type="text" required id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
+
+            <div *ngIf="author.touched && !author.valid" class="alert alert-danger">
+                <p>Author is required</p>
+            </div>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="submittedBy">Submitted By</label><br>
             <input type="text" required id="submittedBy" [(ngModel)]="newQuote.submittedBy" name="submittedBy" #submittedBy="ngModel">
+
+            <div *ngIf="submittedBy.touched && !submittedBy.valid" class="alert alert-danger">
+                <p>Name of submitter required</p>
+            </div>
         </div>
 
         <button type="submit">Submit</button>
