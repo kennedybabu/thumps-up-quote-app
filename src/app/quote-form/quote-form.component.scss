@@ -1,9 +1,15 @@
-div {
+.home {
     text-align: center;
-    background-color: aqua;
+    // background-color: aqua;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
-    max-width: 80%;
+    max-width: 70%;
+    // background-image: url(../../assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) ,rgba(0, 0, 0, 0.411)), url(../../assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #fef9ff;
 }
 
 form {
@@ -15,21 +21,25 @@ form {
 
     textarea {
         border-radius: 10px;
+        opacity: .7;
     }
 
     input {
         border-radius: 10px;
         border: none;
+        opacity: .7;
 
     }
 
     button {
         height: 30px;
+        background-color: #d62839;
+        color: #fef9ff;
     }
 }
 
 button {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     border-radius: 15px;
     border: none;
     padding: .2rem 1rem;

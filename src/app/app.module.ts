@@ -6,13 +6,15 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DeleteDirective } from './delete.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    DeleteDirective
   ],
   imports: [
     BrowserModule,

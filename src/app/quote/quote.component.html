@@ -1,5 +1,5 @@
-<div class="create-quote">
-    <h1>My Quotes</h1>
+<div class="create-quote home">
+    <h1>Our Quotes</h1>
 
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
@@ -19,6 +19,10 @@
                     <div>
                         <button (click)="downVote(i)">Downvote</button>
                         <h4>{{quote.downVote}}</h4>
+                    </div>
+
+                    <div>
+                        <button>Delete Quote</button>
                     </div>
                 </div>
             </div>
