@@ -28,8 +28,8 @@ export class QuoteComponent implements OnInit {
 
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length
-    quote.id = quoteLength+1
-    this.quotes.unshift(quote)
+    quote.id = quoteLength+3
+    this.quotes.unshift(quote)    
   }
 
 

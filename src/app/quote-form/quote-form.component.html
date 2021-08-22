@@ -24,7 +24,7 @@
             <label for="submittedBy">Submitted By</label><br>
             <input type="text" required id="submittedBy" [(ngModel)]="newQuote.submittedBy" name="submittedBy" #submittedBy="ngModel">
 
-            <div *ngIf="submittedBy.touched && !submittedBy.valid" class="alert alert-danger">
+            <div *ngIf="submittedBy.touched && !submittedBy.valid && !null && !undefined" class="alert alert-danger">
                 <p>Name of submitter required</p>
             </div>
         </div>
