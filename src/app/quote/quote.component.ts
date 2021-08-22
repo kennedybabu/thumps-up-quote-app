@@ -17,9 +17,15 @@ export class QuoteComponent implements OnInit {
   ]
 
   upvoteQuote(index:number){
-    this.quotes[index].upVote
+    this.quotes[index].upVote +=1
 
-    console.log( index)
+    console.log(this.quotes[index].upVote)
+  }
+
+  downVote(index:number){
+    this.quotes[index].downVote -=1
+
+    console.log(this.quotes[index].downVote)
   }
 
 
