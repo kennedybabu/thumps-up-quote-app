@@ -5,21 +5,16 @@
         <div>
             <label for="Quote">Quote</label><br>
             <textarea name="quote" id="quote" rows="5" required name="quote" [(ngModel)]="newQuote.quote" #description="ngModel"></textarea>
-            dis{{newQuote.quote}}
         </div>
 
         <div>
             <label for="author">Author</label><br>
             <input type="text" required id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
-            Display: {{newQuote.author}}
-
         </div>
 
         <div>
             <label for="submittedBy">Submitted By</label><br>
-            <input type="text" required id="submittedBy" name="submittedBy" #submittedBy="ngModel" [(ngModel)]="newQuote.submittedBy">
-            let{{newQuote.submittedBy}}
-
+            <input type="text" required id="submittedBy" [(ngModel)]="newQuote.submittedBy" name="submittedBy" #submittedBy="ngModel">
         </div>
 
         <button type="submit">Submit</button>

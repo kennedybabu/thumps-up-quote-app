@@ -5,12 +5,12 @@
 
     
     <ul>
-        <li *ngFor="let quote of quotes; let i = index">
-          {{quote.quote}}
+        <div *ngFor="let quote of quotes; let i = index">
+          <!-- {{quote.quote}} -->
           <app-quote-detail [quote]="quote"></app-quote-detail>
           <button (click)="upvoteQuote(i)">Upvote</button>
           <button (click)="downVote(i)">Downvote</button>
-        </li>
+        </div>
     </ul>
 
   </div>
