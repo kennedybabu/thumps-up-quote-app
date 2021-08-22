@@ -1,10 +1,14 @@
-<div>
+<div class="container-fluid">
     <h2>Create new Quote</h2>
 
     <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
         <div>
             <label for="Quote">Quote</label><br>
             <textarea name="quote" id="quote" rows="5" required [(ngModel)]="newQuote.quote" #description="ngModel"></textarea>
+
+            <!-- <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
+            </div> -->
         </div>
 
         <div>

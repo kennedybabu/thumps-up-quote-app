@@ -8,10 +8,18 @@
         <div class="quote-list">
           <!-- {{quote.quote}} -->
             <div class="item" *ngFor="let quote of quotes; let i = index">
-                <app-quote-detail [quote]="quote"></app-quote-detail>
+                <div class="top">
+                    <app-quote-detail [quote]="quote"></app-quote-detail>
+                </div>
                 <div class="btn-container">
-                    <button (click)="upvoteQuote(i)">Upvote</button>
-                    <button (click)="downVote(i)">Downvote</button>
+                    <div>
+                        <button (click)="upvoteQuote(i)">Upvote</button> 
+                        <h4>{{quote.upVote}}</h4>
+                    </div>
+                    <div>
+                        <button (click)="downVote(i)">Downvote</button>
+                        <h4>{{quote.downVote}}</h4>
+                    </div>
                 </div>
             </div>
         </div>
