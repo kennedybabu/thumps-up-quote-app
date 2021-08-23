@@ -38,6 +38,10 @@ export class QuoteComponent implements OnInit {
     this.quotes.unshift(quote)    
   }
 
+  deleteQuote(index){
+    this.quotes.splice(index,1)
+  }
+
 
 
   constructor() { }
