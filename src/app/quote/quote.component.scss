@@ -4,17 +4,17 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 1rem;
-    // background-color: rgb(238, 134, 116);
     max-width: 70vw;
     align-self: center;
     margin: 0 auto;
     padding: 0 0 2rem 0;
     border-radius: 10px;
     background-image: linear-gradient(to bottom, #004e64, #9fffcae5);
+    min-height: 90vh;
 }
 
 .item {
-    min-width: 70%;
+    width: 70%;
     background-color: #fef9ff;
     margin-top: 1rem;
     padding: .5rem 1rem;
